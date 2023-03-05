@@ -1,0 +1,320 @@
+body{
+  background: linear-gradient(rgb(0, 30, 255),rgb(255, 255, 255));
+}
+/* Pour la position de la navbar */
+.nav, .menu {
+  background-color: #0000007f;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  position: fixed;
+}
+.menu li {
+  list-style: none;
+}
+/* Les modifications du texte */
+.menu li a {
+  text-decoration: none;
+  color: rgb(241, 234, 234);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+}
+/* Quand on met sa souris sur le texte */
+.menu li a:hover {
+  color: #060000;
+}
+/* La taille des boutons */
+.container .btn {
+    position: relative;
+    top: 20px;
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Le contour des boutons */
+.container .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+/* Met la petite barre symétrique à celle en dessous */
+.container .btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+/* la taille de la barre en dessous */
+.container .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+/* Met la petite barre symétrique à celle au dessus */
+.container .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 0;
+    height: 0;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+/* la taille de la barre au dessus */
+.container .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+/* Couleur pour l'accueil'*/
+.container .btn:nth-child(1)::before, /* 1*/
+.container .btn:nth-child(1)::after {
+    background: #fd0000;
+    box-shadow: 0 0 5px #fd0000, 0 0 15px #fd0000, 0 0 30px #fd0000,
+        0 0 60px #fd0000;
+}
+/* Couleur pour l'histoire'*/
+.container .btn:nth-child(2)::before, /* 2*/
+.container .btn:nth-child(2)::after {
+    background: #001aff;
+    box-shadow: 0 0 5px #001aff, 0 0 15px #001aff, 0 0 30px #001aff,
+        0 0 60px #001aff;
+}
+/* Couleur pour les rachats*/
+.container .btn:nth-child(3)::before, /* 3*/
+.container .btn:nth-child(3)::after {
+    background: #30ff01;
+    box-shadow: 0 0 5px #30ff01, 0 0 15px #30ff01, 0 0 30px #30ff01,
+        0 0 60px #30ff01;
+}
+/* Couleur pour les meilleurs jeux */
+.container .btn:nth-child(4)::before, /* 3*/
+.container .btn:nth-child(4)::after {
+    background: #d5ff02;
+    box-shadow: 0 0 5px #d5ff02, 0 0 15px #d5ff02, 0 0 30px #d5ff02,
+        0 0 60px #d5ff02;
+}
+/* pour les img de best */
+.photo{
+  width: 100%;
+  height: auto;
+}
+/* La taille des bannières */
+.photo2{
+  width: 100%;
+  height: 80px;
+}
+.black2{
+  border-radius: 15px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.559);
+  top: 30px;
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+@media(max-width: 600px){
+  .black2{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.559);
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+}
+/*la forme des autres div*/
+.black{
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.559);
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+@media(max-width: 600px){
+  .black{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.559);
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+}
+.bla{
+  background-color: #000000;
+  padding: 100%;
+}
+/*pour l'ensemble des vidéos*/
+#mavideo {
+  object-fit: fill;
+  width: 100%;
+  position: relative;
+  top: 0%;
+}
+#mavideo2 {
+  object-fit: fill;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+}
+/* la bordure de l'accordion */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Pour les images des accordion*/
+img {
+  max-width: 100%
+}
+/* la forme de l'accordion */
+.container__accordion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem .5rem;
+}
+/* Le contour de l'accordion */
+.accordion {
+  list-style: none;
+  max-width: 750px;
+  width: 100%;
+}
+/* Pour le texte titre de l'accordion */
+.accordion__item {
+  margin-bottom: .8rem;
+  border: 1px solid #F2F2F2;
+  transition: all .2s linear;
+}
+/* La bordure qui fait un effet d'ombre sur le contour des accordions */
+.accordion__item.open {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.83);
+}
+/* l'espace qui entour le titre */
+.accordion__item__head {
+  padding: 1rem;
+}
+/* Pour le fond des barres et leurs contours */
+.accordion__item__head {
+  background: #00000071;
+  color: #EEE;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Pour la forme des H2 */
+.accordion__item__head h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+@media(max-width: 600px){
+  .accordion__item__head h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+}
+/* La forme et la couleur de la zone de texte */
+.accordion__item__body {
+  overflow: hidden;
+  height: 0;
+  border-left: 3px solid #000000;
+}
+/* Modifi l'espace de l'intérieur du accordion */
+.accordion__item.open .accordion__item__body {
+  padding: 1rem;
+  height: auto;
+}
+/* Pour l'espace entre les accordion */
+.accordion__item__body > *:not(:first-child) {
+  margin-top: .8rem;
+}
+/* Pour le logo du site*/
+.logo{
+  width: 200px;
+  height: 60px;
+}
+
+h1{
+  color: #ffffff;
+  font-family: Arial;
+}
+
+h5{
+  font-size: 25px;
+  color: #ffffff;
+  font-family: Arial;
+}
+
+h4{
+  font-size: 40px;
+  color: #ffffff;
+  font-family: Arial;
+}
+
+p{
+  font-size: 25px;
+  color: #ffffff;
+  font-family: Arial;
+}
+
+.center{
+  text-align: center;
+}
+/*1vw = 1% de la largeur de la fenêtre // 1VH = 1% de la hauteur de la fenêtre // 1.5rem = 15px */
