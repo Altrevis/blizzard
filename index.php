@@ -9,7 +9,7 @@
   <!-- CSS perso-->
   <link rel="stylesheet" href="css/forma.css" />
 
-  <title>Blizzard, l'entreprise de jeux vidéo</title>
+  <title>Blizzard, l'entreprise de jeux vidéos</title>
 
 </head>
 
