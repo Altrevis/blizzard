@@ -1,147 +1,239 @@
-body{
-  background: linear-gradient(rgb(0, 30, 255),rgb(255, 255, 255));
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgb(0, 30, 255), rgba(91, 14, 14, 0.882));
 }
-/* Pour la position de la navbar */
-.nav, .menu {
-  background-color: #0000007f;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 90px;
-  top: 0;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  z-index: 2;
   position: fixed;
+  width: 100%;
+  top: 0px;
+  background: #24252a;
+  color: #fff;
 }
-.menu li {
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+.logo {
+  order: 1;
+  font-size: 1.8rem;
+}
+
+.menu-items li{
   list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
 }
-/* Les modifications du texte */
-.menu li a {
+
+.navbar a {
+  color: #fff;
   text-decoration: none;
-  color: rgb(241, 234, 234);
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: 0.5s;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
-/* Quand on met sa souris sur le texte */
-.menu li a:hover {
-  color: #060000;
+
+.navbar a:hover {
+  color: #0040ff;
 }
-/* La taille des boutons */
-.container .btn {
+
+@media (max-width: 768px) {
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
     position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
     top: 20px;
-    width: 200px;
-    height: 50px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Le contour des boutons */
-.container .btn a {
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
     width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #24252a;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    padding: 10px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    overflow: hidden;
-    color: #fff;
-    z-index: 1;
-    transition: 0.5s;
-    backdrop-filter: blur(15px);
-}
-/* Met la petite barre symétrique à celle en dessous */
-.container .btn::before {
-    content: "";
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    overflow: scroll;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+
+  .logo {
     position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-    bottom: -5px;
-    width: 0;
-    height: 0;
-    background: #f00;
-    border-radius: 10px;
-    transition: 0.5s;
-    transition-delay: 0.5;
+    top: 12px;
+    right: 15px;
+    font-size: 1.7rem;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
 }
-/* la taille de la barre en dessous */
-.container .btn:hover::before{
-    bottom: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px;
+
+@media (max-width: 500px) {
+  .navbar-container input[type="checkbox"]:checked ~ .logo {
+    display: none;
+  }
 }
-/* Met la petite barre symétrique à celle au dessus */
-.container .btn::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-    top: -5px;
-    width: 0;
-    height: 0;
-    background: #f00;
-    border-radius: 10px;
-    transition: 0.5s;
-    transition-delay: 0.5;
-}
-/* la taille de la barre au dessus */
-.container .btn:hover::after{
-    top: 0;
-    height: 50%;
-    width: 80%;
-    border-radius: 30px;
-}
-/* Couleur pour l'accueil'*/
-.container .btn:nth-child(1)::before, /* 1*/
-.container .btn:nth-child(1)::after {
-    background: #fd0000;
-    box-shadow: 0 0 5px #fd0000, 0 0 15px #fd0000, 0 0 30px #fd0000,
-        0 0 60px #fd0000;
-}
-/* Couleur pour l'histoire'*/
-.container .btn:nth-child(2)::before, /* 2*/
-.container .btn:nth-child(2)::after {
-    background: #001aff;
-    box-shadow: 0 0 5px #001aff, 0 0 15px #001aff, 0 0 30px #001aff,
-        0 0 60px #001aff;
-}
-/* Couleur pour les rachats*/
-.container .btn:nth-child(3)::before, /* 3*/
-.container .btn:nth-child(3)::after {
-    background: #30ff01;
-    box-shadow: 0 0 5px #30ff01, 0 0 15px #30ff01, 0 0 30px #30ff01,
-        0 0 60px #30ff01;
-}
-/* Couleur pour les meilleurs jeux */
-.container .btn:nth-child(4)::before, /* 3*/
-.container .btn:nth-child(4)::after {
-    background: #d5ff02;
-    box-shadow: 0 0 5px #d5ff02, 0 0 15px #d5ff02, 0 0 30px #d5ff02,
-        0 0 60px #d5ff02;
-}
+
 /* pour les img de best */
-.photo{
+.photo {
   width: 100%;
   height: auto;
 }
+
 /* La taille des bannières */
-.photo2{
-  width: 100%;
+.photo2 {
+  width: 95%;
   height: 80px;
+  margin-top: 40px;
+  margin-left: 10px;
 }
-.black2{
+
+@media (max-width: 600px) {
+  .photo2 {
+    width: 94%;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}
+
+/*la forme des autres div*/
+.black {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.559);
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+@media(max-width: 600px) {
+  .black {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.559);
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.black2 {
   border-radius: 15px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.559);
@@ -155,49 +247,67 @@ body{
   text-align: center;
   color: rgb(255, 255, 255);
 }
-@media(max-width: 600px){
-  .black2{
-    position: relative;
+
+@media(max-width: 600px) {
+  .black2 {
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.559);
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     font-size: 20px;
     text-align: center;
     color: rgb(255, 255, 255);
   }
 }
-/*la forme des autres div*/
-.black{
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.559);
-  margin-top: 6%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10%;
-  font-size: 20px;
-  width: 70%;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-@media(max-width: 600px){
-  .black{
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.559);
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 10%;
-    font-size: 20px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-  }
-}
-.bla{
+
+/* .block1 {
+  top: 100px;
+  position: fixed;
+  float: left;
+  width: 28%;
+  margin: 10px;
+  border: 3px solid #fffefe;
   background-color: #000000;
-  padding: 100%;
+  bottom: 70px;
 }
+
+@media (max-width: 600px) {
+  .block1 {
+    top: 100px;
+    position: fixed;
+    float: left;
+    width: 50%;
+    height: 80%;
+    margin: 10px;
+    border: 3px solid #fffefe;
+    background-color: #000000;
+    bottom: 70px;
+  }
+}
+
+.block2 {
+  top: 100px;
+  left: 435px;
+  position: fixed;
+  width: 70%;
+  margin: 10px;
+  border: 3px solid #ffffff;
+  background-color: #000000;
+  bottom: 70px;
+} */
+
+.texte {
+  position: absolute;
+  background-color: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
 /*pour l'ensemble des vidéos*/
 #mavideo {
   object-fit: fill;
@@ -205,22 +315,34 @@ body{
   position: relative;
   top: 0%;
 }
+
 #mavideo2 {
   object-fit: fill;
   width: 100%;
+  height: 100%;
   position: fixed;
   top: 0%;
 }
+
+#mavideo3 {
+  object-fit: fill;
+  width: 100%;
+  position: relative;
+}
+
+#mavideo4 {
+  object-fit: fill;
+  width: 100%;
+  position: relative;
+}
+
 /* la bordure de l'accordion */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*Pour les images des accordion*/
-img {
-  max-width: 100%
-}
+
 /* la forme de l'accordion */
 .container__accordion {
   width: 100%;
@@ -230,26 +352,31 @@ img {
   justify-content: center;
   padding: 2rem .5rem;
 }
+
 /* Le contour de l'accordion */
 .accordion {
   list-style: none;
   max-width: 750px;
   width: 100%;
 }
+
 /* Pour le texte titre de l'accordion */
 .accordion__item {
   margin-bottom: .8rem;
   border: 1px solid #F2F2F2;
   transition: all .2s linear;
 }
+
 /* La bordure qui fait un effet d'ombre sur le contour des accordions */
 .accordion__item.open {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.83);
 }
+
 /* l'espace qui entour le titre */
 .accordion__item__head {
   padding: 1rem;
 }
+
 /* Pour le fond des barres et leurs contours */
 .accordion__item__head {
   background: #00000071;
@@ -259,62 +386,67 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+
 /* Pour la forme des H2 */
 .accordion__item__head h2 {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
-@media(max-width: 600px){
-  .accordion__item__head h2{
+
+@media(max-width: 600px) {
+  .accordion__item__head h2 {
     text-transform: uppercase;
     font-size: 1rem;
   }
 }
+
 /* La forme et la couleur de la zone de texte */
 .accordion__item__body {
   overflow: hidden;
   height: 0;
   border-left: 3px solid #000000;
 }
+
 /* Modifi l'espace de l'intérieur du accordion */
 .accordion__item.open .accordion__item__body {
   padding: 1rem;
   height: auto;
 }
+
 /* Pour l'espace entre les accordion */
-.accordion__item__body > *:not(:first-child) {
+.accordion__item__body>*:not(:first-child) {
   margin-top: .8rem;
 }
+
 /* Pour le logo du site*/
-.logo{
+.logo2 {
   width: 200px;
   height: 60px;
 }
 
-h1{
+h1 {
   color: #ffffff;
   font-family: Arial;
 }
 
-h5{
-  font-size: 25px;
-  color: #ffffff;
-  font-family: Arial;
-}
-
-h4{
+h4 {
   font-size: 40px;
   color: #ffffff;
   font-family: Arial;
 }
 
-p{
+h5 {
   font-size: 25px;
   color: #ffffff;
   font-family: Arial;
 }
 
-.center{
+p {
   text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: Arial;
 }
+
 /*1vw = 1% de la largeur de la fenêtre // 1VH = 1% de la hauteur de la fenêtre // 1.5rem = 15px */
+
