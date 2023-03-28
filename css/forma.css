@@ -262,7 +262,7 @@ body {
   }
 }
 
-/* .block1 {
+.block1 {
   top: 100px;
   position: fixed;
   float: left;
@@ -296,7 +296,7 @@ body {
   border: 3px solid #ffffff;
   background-color: #000000;
   bottom: 70px;
-} */
+} 
 
 .texte {
   position: absolute;
