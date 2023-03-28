@@ -25,31 +25,31 @@
 
   <div class="black2">
 
-    <h1>Bienvenue</h1>
+<h1>Bienvenue</h1>
 
-    <br>
+<br>
 
-    <h5> Bienvenue sur mon site web basé sur la découverte d'une entreprise. Pour certain il
-      le présente sous le format d'une vidéo, pour d'autre un diaporama mais moi j'ai préféré aller plus loin
-      que ça. Je me nomme Altrévis et aujourd'hui j'ai l'honeur de vous présenter l'une des plus grande
-      entreprise de jeux vidéo.</h5>
+<h5> Bienvenue sur mon site web basé sur la découverte d'une entreprise. Pour certain il
+  le présente sous le format d'une vidéo, pour d'autre un diaporama mais moi j'ai préféré aller plus loin
+  que ça. Je me nomme Altrévis et aujourd'hui j'ai l'honeur de vous présenter l'une des plus grande
+  entreprise de jeux vidéo.</h5>
 
-    <br>
+<br>
 
-    <h4><u>Blizzard Entertainment.</u></h4>
+<h4><u>Blizzard Entertainment.</u></h4>
 
-    <br>
+<br>
 
-    <h5>Alors alors alors... La façon d'on j'ai voulu présenter le site web est assez simple
-      dans l'ensemble. Il y aura une partie présentation de l'histoire de l'entreprise, une partie sur les plus
-      gros rachats que l'entreprise à put recevoir et on verra que c'est parfois des sommes titanesques. Et on finira
-      par une petite
-      compilation des meilleurs jeux/extention que l'entreprise à put nous offrir.</h5>
-    <br>
+<h5>Alors alors alors... La façon d'on j'ai voulu présenter le site web est assez simple
+  dans l'ensemble. Il y aura une partie présentation de l'histoire de l'entreprise, une partie sur les plus
+  gros rachats que l'entreprise à put recevoir et on verra que c'est parfois des sommes titanesques. Et on finira
+  par une petite
+  compilation des meilleurs jeux/extention que l'entreprise à put nous offrir.</h5>
+<br>
 
-    <img class="logo" src="img/logo2.png" alt="">
+<img class="logo2" src="img/logo2.png" alt="">
 
-  </div>
+</div>
 
 </body>
 
