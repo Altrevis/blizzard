@@ -266,9 +266,10 @@ article video{
 } 
 
 .logo2 {
-  width: 30%;
+  width: 50vh;
   height: auto;
-  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
   float: right;
 }
 
@@ -296,7 +297,7 @@ article.bestgame .content{
   background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(0,0,0)100%);
   z-index: 1;
   border-radius: 15px;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 /*1vw = 1% de la largeur de la fenêtre // 1VH = 1% de la hauteur de la fenêtre // 1.5rem = 15px */
 
