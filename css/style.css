@@ -252,18 +252,16 @@ article .photo{
   float: right;
 }
 
-/* .arti{
-  padding: inherit;
-  margin-bottom: 2em;
-  border: 2px solid #0ac2f9;
-  border-radius: 15px;
-}*/
-
 article video{
   width: 100%;
   height: -1000px;
   object-fit: cover;
-} 
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+}
 
 .logo2 {
   width: 50vh;
