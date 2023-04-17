@@ -263,8 +263,10 @@ article video{
 }
 
 .logo {
-  width: 20%;
-  height: 7%;
+  width: 30vh;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .logo2 {
