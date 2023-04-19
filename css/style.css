@@ -213,7 +213,6 @@ article{
     font-weight: 500;
   }
 
-
   .logo {
     position: absolute;
     top: 12px;
@@ -262,7 +261,7 @@ article video{
   object-fit: cover;
 }
 
-.logo {
+.logo3 {
   width: 30vh;
   height: auto;
   margin-bottom: 20px;
