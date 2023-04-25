@@ -8,6 +8,8 @@
 
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <!-- CSS perso-->
 
   <link rel="stylesheet" href="css/style.css" />
@@ -28,9 +30,9 @@
 
     <div class="content">
 
-      <h1>Les meilleurs jeux de la société</h1>
+      <h1>Blizzard Legends</h1>
 
-      <h3>-- Venez rejoindre les aventures extraordinaire des jeux Blizzard --</h3>
+      <h3>-- Découvrez les jeux mythiques qui ont captivé des millions de joueurs à travers le monde --</h3>
 
     </div>
 
@@ -46,7 +48,7 @@
 
     <?php include('partial/jeux-vidéo/overwatch.html'); ?>
 
-  </main>
+  </main> 
 
 </body>
 

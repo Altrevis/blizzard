@@ -28,9 +28,9 @@
 
     <div class="content">
 
-      <h1>L'histoire de Blizzard</h1>
+      <h1>Blizzard Chronicles</h1>
 
-      <h3>-- Découvrez les débuts de Blizzard et leurs partenariats --</h3>
+      <h3>-- Plongez dans l'histoire de l'entreprise qui a révolutionné le jeu vidéo --</h3>
 
     </div>
 

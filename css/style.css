@@ -11,14 +11,14 @@ p{
 
 h1{
   color: #0ac2f9;
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 
 h3{
   font-size: 1.5em;
   text-shadow: 5px 7px 7px rgba(0, 0, 0, 0.559);
   color: #f8b700;
-  margin-bottom: 1.8em;
+  margin-bottom: 0.8em;
 }
 
 header{
@@ -245,13 +245,12 @@ article{
 
 /* pour les img de best */
 article .photo{
-  width: 30%;
+  width: 30vh;
   height: auto;
   margin: auto;
   padding: 20px 0 ;
   border-radius: 5px;
   margin-left: 20px;
-  margin-bottom: 20px;
   float: right;
 }
 
@@ -261,19 +260,21 @@ article video{
   object-fit: cover;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 .logo3 {
   width: 40vh;
   height: auto;
-  margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .logo2 {
-  width: 50vh;
+  width: 25vh;
   height: auto;
   margin-bottom: 20px;
   margin-left: 20px;
-  float: right;
 }
 
 article.bestgame{

@@ -29,9 +29,9 @@
 
     <div class="content">
 
-      <h1>Blizzard Fan Site</h1>
+      <h1>Blizzard Odyssey</h1>
 
-      <h3>-- Découvrer les aventures que peux offrir Blizzard --</h3>
+      <h3>-- Suivez le parcours incroyable de l'une des plus grandes entreprises de l'industrie du jeu vidéo --</h3>
 
     </div>
 
@@ -47,6 +47,11 @@
 
   </main>
 
+  <footer>
+
+    <img class="logo3" src="img/logo2.png" alt="">
+
+  </footer>
 
 </body>
 
