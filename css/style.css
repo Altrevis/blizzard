@@ -131,6 +131,7 @@ article{
 
 .navbar a:hover {
   color: #0ac2f9;
+    border-bottom: 5px solid #0ac2f9;
 }
 
 @media (max-width: 768px) {
