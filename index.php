@@ -6,7 +6,7 @@
 
   <!-- Required meta tags -->
 
-  <meta charset="utf-8">a
+  <meta charset="utf-8">
   
   <meta name="keywords" content="blizzard, wow, world of warcraft, diablo, starcraft, overwatch">
 
