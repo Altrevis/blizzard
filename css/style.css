@@ -156,7 +156,7 @@ article{
 .navbar a:hover {
   transition: 0.1s;
   color: #0ac2f9;
-    border-bottom: 5px solid #0ac2f9;
+    border-bottom: 3px solid #f8b700;;
 }
 
 @media (max-width: 768px) {
