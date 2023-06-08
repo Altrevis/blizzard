@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  background: black; 
+  background: #000000;
   font-family: 'Roboto', sans-serif;
+      /* Ajouter l'image de texture de pierre médiévale en tant qu'arrière-plan */
+      background-image: url('https://zupimages.net/up/23/23/p5f5.jpg');
+      /* Répéter l'image pour couvrir tout le contour */
+      background-repeat: repeat;
+      /* Définir le style de la bordure */
+      border-style: solid;
+      /* Définir la couleur de la bordure */
+      border-color: transparent;
 }
 
 p{
@@ -80,6 +88,7 @@ main{
   text-align: justify;
   width: 90%;
   margin: 0 auto;
+  background-color: #000000;
 }
 
 article{
