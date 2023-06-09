@@ -7,3 +7,9 @@
       border-style: solid;
       /* Définir la couleur de la bordure */
       border-color: transparent;
+
+
+
+
+texte idée:
+mettre le texte dans une autre case et planifié les bande pour que ce soit des changement de page pour plus de personnalisation
