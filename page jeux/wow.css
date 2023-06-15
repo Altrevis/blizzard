@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: url(https://zupimages.net/up/23/24/raqc.png);
+    font-family: 'Roboto', sans-serif;
+  }
+
+.explication{
+    text-align: center;
+    color: rgb(185, 108, 8);
+    background-color: rgb(0, 0, 0);
+    margin-top: 1%;
+    padding: 3%;
+    width: 80%;
+    margin-left: 6%;
+    border-radius: 15px;
+}
+
+.contenue{
+    text-align: center;
+    color: rgb(185, 108, 8);
+    background-color: rgb(0, 0, 0);
+    margin-top: 1%;
+    padding: 3%;
+    width: 80%;
+    margin-left: 6%;
+    border-radius: 15px;
+}
+
+.lore{
+    text-align: center;
+    color: rgb(185, 108, 8);
+    background-color: rgb(0, 0, 0);
+    margin-top: 1%;
+    padding: 3%;
+    width: 80%;
+    margin-left: 6%;
+    border-radius: 15px;
+}
