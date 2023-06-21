@@ -1,39 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    background: url(https://zupimages.net/up/23/24/raqc.png);
+    background-color: rgb(0, 148, 240);
     font-family: 'Roboto', sans-serif;
   }
 
-.explication{
+  .explication {
     text-align: center;
     color: rgb(185, 108, 8);
     background-color: rgb(0, 0, 0);
+    padding: 5%;
     margin-top: 1%;
-    padding: 3%;
-    width: 80%;
-    margin-left: 6%;
-    border-radius: 15px;
-}
+    width: 98vw;
+    box-sizing: border-box;
+  }
 
 .contenue{
     text-align: center;
     color: rgb(185, 108, 8);
     background-color: rgb(0, 0, 0);
+    padding: 5%;
     margin-top: 1%;
-    padding: 3%;
-    width: 80%;
-    margin-left: 6%;
-    border-radius: 15px;
+    width: 98vw;
+    box-sizing: border-box;
 }
 
 .lore{
     text-align: center;
     color: rgb(185, 108, 8);
     background-color: rgb(0, 0, 0);
+    padding: 5%;
     margin-top: 1%;
-    padding: 3%;
-    width: 80%;
-    margin-left: 6%;
-    border-radius: 15px;
+    width: 98vw;
+    box-sizing: border-box;
 }
