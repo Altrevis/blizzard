@@ -5,27 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 
-  .explication {
-    text-align: center;
-    color: rgb(185, 108, 8);
-    background-color: rgb(0, 0, 0);
-    padding: 5%;
-    margin-top: 1%;
-    width: 98vw;
-    box-sizing: border-box;
-  }
-
-.contenue{
-    text-align: center;
-    color: rgb(185, 108, 8);
-    background-color: rgb(0, 0, 0);
-    padding: 5%;
-    margin-top: 1%;
-    width: 98vw;
-    box-sizing: border-box;
-}
-
-.lore{
+.block{
     text-align: center;
     color: rgb(185, 108, 8);
     background-color: rgb(0, 0, 0);
